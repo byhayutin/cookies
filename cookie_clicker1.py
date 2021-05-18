@@ -6,22 +6,22 @@ import time
 
 chrome_options = Options()
 # profile path found in chrome://version/
-chrome_options.add_argument("--user-data-dir=/home/bosas/.config/google-chrome/Profile 1") # change to profile path
+chrome_options.add_argument("--user-data-dir=/home/bosas/.config/google-chrome/Default/Profile 1") # change to profile path
 #chrome_options.add_argument('--profile-directory=Profile 1')
 
 browser = webdriver.Chrome(executable_path="/usr/bin/chromedriver", chrome_options=chrome_options) # change the executable_path too
 browser.get("https://orteil.dashnet.org/cookieclicker/")
 time.sleep(3)
 
-my_cookie_id = "Mi4wMzF8fDE2MjA3NjY1OTM1NDI7MTYyMDc2NjU5MzU0MjsxNjIxMjg0NzE5MDQ3OyBCT1NBUyA7Z3R5dWl8MTExMTExMDExMDAxMDAxMDAxMDEwfDIxMDIzMTQyMjQzLjA1NjkxOzc2ODE0NjkwMDc1LjIzOTU7NTM2OTsxNzs1MTE0OTIyNzcuOTU3NzUwNDsyNzI7MDswOzA7MDswOzA7MDswOzA7MTc7MDswOzA7MDswOzA7OzA7MDswOzA7MDswOzA7LTE7LTE7LTE7LTE7LTE7MDswOzA7MDs1MDswOzA7MTs0OzE2MjEyMTUwNDMzODY7MDswOzs0MTswOzA7NDEyMTMxMC42ODg1Mjk4NTc7fDEyMywxMjMsNTExODQzNDYzNiwwLCwwLDEyMzs2NSw2Niw2MDA1NTY4OTksMCwsMCw2NTs0Miw0Miw1ODI4OTI2MjYsMCwsMCw0MjsyNywyNywxNjU3ODYyMTU3LDAsLDAsMjc7MTQsMTQsMTc4NjE5OTUxOSwxLCwwLDE0OzE1LDE1LDQ1MDQxMjEzNjIsMCwsMCwxNTsyMSwyMSwzMjQ0OTc5MDgwMiwxLC0xLy0xLy0xIDIgMTYyMTI4NDU3MDQxOCAxLDAsMjE7MTAsMTAsMTY1MzA1MDk1MDIsMCwsMCwxMDsyLDIsODc1OTUwNjAzOSwxLCwwLDI7MCwwLDAsMCwsMCwwOzAsMCwwLDAsLDAsMDswLDAsMCwwLCwwLDA7MCwwLDAsMCwsMCwwOzAsMCwwLDAsLDAsMDswLDAsMCwwLCwwLDA7MCwwLDAsMCwsMCwwOzAsMCwwLDAsLDAsMDswLDAsMCwwLCwwLDA7fDExMTExMTExMTExMTAwMTExMTExMTExMTExMTExMTAwMTExMTExMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTExMTExMTExMTExMTExMTExMTExMTEwMDAxMTAwMDAwMDAwMDAwMDAwMTEwMDAwMTAxMDExMTEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDExMTExMTAwMDAxMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTExMTAwMDAwMDAwMTExMTAwMDAwMDAwMTExMDAwMDAwMDAwMTExMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTExMTExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTExMXwxMTExMTEwMDAwMDAwMDAwMTExMTExMDAwMDAwMDAxMTEwMTExMTAxMTEwMTAwMTAwMTAwMTAwMDAwMDAwMDAwMDAwMTEwMDAxMDEwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDExMDAwMDEwMDAwMTAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwfHw%3D%21END%21"
+with open('my_cookie_id', 'r') as file:
+    my_cookie_id = file.read().replace('\n', '')
+    file.close()
 
 cookie_options = browser.find_element_by_id("prefsButton")
 cookie_options.click()
 time.sleep(2)
-#cookie_import = browser.find_element_by_xpath("//a[contains(text(),'Import save')")
 cookie_import = browser.find_element_by_xpath("//div[@id='menu']/div[3]/div[3]/a[2]")
 cookie_import.click()
-#cookie_text_id = browser.find_element_by_xpath("//textarea[@id='textareaPrompt'")
 cookie_text_id = browser.find_element_by_xpath("//div[@id='promptContent']/div[2]/textarea")
 cookie_text_id.send_keys(my_cookie_id)
 
@@ -31,7 +31,8 @@ cookie_import_save.click()
 time.sleep(1)
 cookie = browser.find_element_by_id("bigCookie")
 
-cookie_sheet = 1000
+sleep_time = 5
+cookie_sheet = 10000
 while True:
     for i in range(0, cookie_sheet):
         #time.sleep(.1)
@@ -40,4 +41,19 @@ while True:
     print("save {} cookies in my cookie sheet".format(cookie_sheet))
     cookie_save = browser.find_element_by_link_text("Save")
     cookie_save.click()
-    time.sleep(2)
+    time.sleep(1)
+    cookie_save.click()
+    export_save = browser.find_element_by_link_text("Export save")
+    export_save.click()
+    export_txt = browser.find_element_by_id('textareaPrompt')
+    my_cookie_id = export_txt.text
+    f = open("my_cookie_id", "w")
+    f.write(str(my_cookie_id))
+    f.close
+    all_done = browser.find_element_by_id("promptOption0")
+    # //*[@id="promptOption0"]
+    # /html/body/div[2]/div[2]/div[11]/div/div[1]/div[3]/a
+    all_done.click()
+    print("data saved to file, my_cookie_id")
+
+    time.sleep(sleep_time)
